@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+ box-sizing: border-box;   
+}
+h1{font-size: 3.53em;}
+h2{font-size:2.7em ;}
+h3{font-size:2em ;}
+p{font-size:1.25em ;}
+ul{list-style: none;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+     background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color:#a48dd3;
+}
+button:hover{
+    background-color: rgb(151, 85, 213);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{color: blueviolet;
+    text-shadow:  0.1em 0.1em 0.2em;}
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight:bold;
+    color: black;
+}
+header a:hover{
+    color: rgb(254, 0, 191);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*ocupe todo el ancho de la pantalla*/
+
+}
+
+#hero h1{
+    color: white;
+}
+#BT21{
+
+}
+#BT21 .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+#Discografia {
+background-color: rgb(30, 30, 30);
+color: white ;
+text-align: center;
+}
+#Discografia .container,p{
+    color: white;
+    text-shadow:black 0.1em 0.1em 0.2em ;
+}
+#Discografia .container{
+padding: 150px 12px;
+}
+#Discografia h2{
+    margin-top: 0;
+    font-size:3.2em ;
+}
+#Discografia p{
+    display: none;
+}
+#Discografia .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 25px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/disco1.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/disco2.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/disco3.jpg");
+}
+
+#video .container{
+    padding :24px;
+    text-align: center;
+    
+   
+   
+}
+#BTS-ARMY{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*ocupe todo el ancho de la pantalla*/
+
+}
+#BTS-ARMY h2{
+    font-size: 9vw;
+}
+#BTS-ARMY button{
+    font-size: 5vw;
+}
+
+footer{
+background-color: rgb(230,230,230);
+}
+footer p{
+margin: 0;
+padding: 12px;
+color: rgb(0, 0, 0);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width : 780px){
+
+    header{
+        position: fixed;
+        width: 100%;  /* esto es para que se mantenga fijo la barra de navegacion*/
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content:space-between ;
+    }
+
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 4.5em;
+    }
+
+    #BT21 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+    .video{
+        width: 850px;
+        height: 550px;
+    }   
+
+    
+    #BTS-ARMY h2{
+        font-size:  5em;
+    }   
+    
+    #BTS-ARMY button{
+        font-size: 2em;
+    }
+
+    #Discografia .discos{
+        display: flex;
+        justify-content: center;
+    }
+    #Discografia p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Discografia h3{
+        margin-top:auto;
+    }
+
+    #Discografia .carta{
+        padding: 28px;
+    } 
+}
+@media(min-width: 1200px){
+    #Discografia{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+    
+     
+      
